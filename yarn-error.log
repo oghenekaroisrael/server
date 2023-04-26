@@ -1,0 +1,42 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn run dev
+
+PATH: 
+  /Users/user/google-cloud-sdk/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/user/google-cloud-sdk/bin:/Users/user/Library/Android/sdk/emulator:/Users/user/Library/Android/sdk/platform-tools:/Users/user/Library/Android/sdk/emulator:/Users/user/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/user/Desktop/PlayTime/react-checkout-backend/package.json: Unexpected token } in JSON at position 265
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "react-checkout-backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+  		"start": "node ./build/index.js",
+  		"build": "npm-run-all clean transpile",
+  		"test": "jest",
+  		"dev": "nodemon --exec babel-node ./index.js"
+  	},
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
